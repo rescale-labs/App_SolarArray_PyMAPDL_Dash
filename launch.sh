@@ -33,4 +33,6 @@ pip install --upgrade pip
 
 ## Install dependencies and start the web server
 pip install -r requirements.txt
+
+export PYMAPDL_MAPDL_EXEC=`find /program/ -type f -name mapdl | head -1`
 gunicorn --certfile $HOME/.certs/nb.pem --keyfile $HOME/.certs/nb.key -b 0.0.0.0:8888 app:server
