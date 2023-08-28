@@ -1,6 +1,6 @@
 # Solar Array Designer
 
-Solar Array Designer is a [Dash](https://dash.plotly.com/) web app created by Steve Kiefer for his [ANSYS in a Python Web App application] (https://towardsdatascience.com/ansys-in-a-python-web-app-part-2-pre-processing-solving-with-pymapdl-50428c18f8e7) article. We have cloned the [original repository](https://github.com/shkiefer/pyAnsys_MAPDL_dash) and made a few changes to make it a Rescale App. The goal is to demonstrate how to port an existing Dash web app to Rescale.
+Solar Array Designer is a [Dash](https://dash.plotly.com/) web app created by Steve Kiefer for his [ANSYS in a Python Web App application](https://towardsdatascience.com/ansys-in-a-python-web-app-part-2-pre-processing-solving-with-pymapdl-50428c18f8e7) article. We have cloned the [original repository](https://github.com/shkiefer/pyAnsys_MAPDL_dash) and made a few changes to make it a Rescale App. The goal is to demonstrate how to port an existing Dash web app to Rescale.
 
 We encourage you to read Steve's original article, which includes an in-depth walkthrough the application code.
 
