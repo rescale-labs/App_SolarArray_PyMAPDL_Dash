@@ -1,0 +1,445 @@
+❯ source build.sh
+updating: dist/ (stored 0%)
+updating: dist/requirements.txt (deflated 21%)
+updating: dist/app.py (deflated 79%)
+updating: dist/assets/ (stored 0%)
+updating: dist/assets/app_icon.png (deflated 3%)
+updating: dist/spub_launch.sh (deflated 33%)
+2023-08-28 16:58:59,094 - Authenticated as bdobrzelecki@rescale.com
+2023-08-28 16:58:59,114 - Sandbox: Syncing software
+2023-08-28 16:59:04,268 - updated dev analysis Yxuia
+2023-08-28 16:59:05,337 - created dev analysis version GmoNk
+2023-08-28 16:59:05,338 - created dev analysis version GmoNk env
+2023-08-28 16:59:05,350 - Uploading Files
+2023-08-28 16:59:05,354 - Uploading: dist.zip
+2023-08-28 16:59:11,082 - Uploading: /var/folders/rf/xm3_hk9n6d9cmv_s1vwrmd880000gn/T/rescale-cli-work6743201486936545214/settings.json
+2023-08-28 16:59:11,892 - Uploading: spub_build.sh
+Please choose from the following configuration options:
+0. No MPI
+1. No MPI
+
+2023-08-28 16:59:15,720 - Sandbox: Saving Sandbox
+2023-08-28 16:59:18,954 - Sandbox RtEjFc: Saved
+2023-08-28 16:59:32,800 - Sandbox RtEjFc: Waiting for status INSTALLATION_COMPLETE
+2023-08-28 17:00:33,382 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:01:33,869 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:02:34,444 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:03:34,953 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:04:35,609 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:05:36,228 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:06:36,826 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:07:37,381 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:08:38,011 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:09:38,560 - Sandbox RtEjFc: Status - SANDBOX_STARTING
+2023-08-28 17:10:39,136 - Sandbox RtEjFc: Status - INSTALLATION_MOUNTING
+2023-08-28 17:11:39,692 - Sandbox RtEjFc: Status - INSTALLATION_COMPLETE
+2023-08-28 17:11:39,692 - Sandbox creation completed.
+
+Please perform any manual installation steps on the sandbox before running `spub tile publish --sandboxId RtEjFc` to publish the software.
+
+Sandbox connection info can be retrieved with `spub sandbox connect --sandbox-id RtEjFc`.
+Sandbox connection info can be retrieved with `spub sandbox connect --sandbox-id RtEjFc`.
+ssh -p 22 uprod_RtEjFc@ec2-34-222-143-68.us-west-2.compute.amazonaws.com
+Warning: Permanently added 'ec2-34-222-143-68.us-west-2.compute.amazonaws.com' (ED25519) to the list of known hosts.
+PREFIX=/program/com_rescale_app_solar_array_designer/2023.08.28-dev/miniconda
+Unpacking payload ...
+Extracting : ca-certificates-2023.05.30-h06a4308_0.conda:   7%|▋         | 5/70 [00:01<00:26,  2.44it/sExtracting : zlib-1.2.13-h5eee18b_0.conda:   9%|▊         | 6/70 [00:01<00:26,  2.44it/s]              Extracting : conda-content-trust-0.1.3-py311h06a4308_0.conda:  26%|██▌       | 18/70 [00:01<00:21,  2.4Extracting : certifi-2023.5.7-py311h06a4308_0.conda:  27%|██▋       | 19/70 [00:01<00:20,  2.44it/s]   Extracting : conda-libmamba-solver-23.5.0-py311h06a4308_0.conda:  31%|███▏      | 22/70 [00:01<00:19,  Extracting : idna-3.4-py311h06a4308_0.conda:  33%|███▎      | 23/70 [00:01<00:19,  2.44it/s]           Extracting : conda-package-streaming-0.8.0-py311h06a4308_0.conda:  79%|███████▊  | 55/70 [00:01<00:00, Extracting : xz-5.4.2-h5eee18b_0.conda:  80%|████████  | 56/70 [00:01<00:00, 53.09it/s]                Extracting : conda-package-handling-2.1.0-py311h06a4308_0.conda:  93%|█████████▎| 65/70 [00:01<00:00, 5Extracting : readline-8.2-h5eee18b_0.conda:  94%|█████████▍| 66/70 [00:01<00:00, 53.09it/s]            Extracting : charset-normalizer-2.0.4-pyhd3eb1b0_0.conda:  99%|█████████▊| 69/70 [00:01<00:00, 53.09it/                                                                                                         
+Installing base environment...
+
+
+Downloading and Extracting Packages
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: ...working... done
+Executing transaction: ...working... done
+installation finished.
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.5.2
+  latest version: 23.7.3
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=23.7.3
+
+
+
+## Package Plan ##
+
+  environment location: /program/com_rescale_app_solar_array_designer/2023.08.28-dev/miniconda/envs/RESCALE
+
+  added / updated specs:
+    - python=3.9
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    openssl-3.0.10             |       h7f8727e_2         5.2 MB
+    pip-23.2.1                 |   py39h06a4308_0         2.6 MB
+    python-3.9.17              |       h955ad1f_0        25.0 MB
+    setuptools-68.0.0          |   py39h06a4308_0         928 KB
+    wheel-0.38.4               |   py39h06a4308_0          64 KB
+    ------------------------------------------------------------
+                                           Total:        33.8 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2023.05.30-h06a4308_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1 
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_0 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1 
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1 
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0 
+  openssl            pkgs/main/linux-64::openssl-3.0.10-h7f8727e_2 
+  pip                pkgs/main/linux-64::pip-23.2.1-py39h06a4308_0 
+  python             pkgs/main/linux-64::python-3.9.17-h955ad1f_0 
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0 
+  setuptools         pkgs/main/linux-64::setuptools-68.0.0-py39h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.41.2-h5eee18b_0 
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0 
+  tzdata             pkgs/main/noarch::tzdata-2023c-h04d1e81_0 
+  wheel              pkgs/main/linux-64::wheel-0.38.4-py39h06a4308_0 
+  xz                 pkgs/main/linux-64::xz-5.4.2-h5eee18b_0 
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_0 
+
+
+
+Downloading and Extracting Packages
+                                                     
+Preparing transaction: ...working... done            
+Verifying transaction: ...working... done            
+Executing transaction: ...working... done            
+#                                                    
+# To activate this environment, use
+#
+#     $ conda activate RESCALE
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+Requirement already satisfied: pip in /program/com_rescale_app_solar_array_designer/2023.08.28-dev/miniconda/envs/RESCALE/lib/python3.9/site-packages (23.2.1)
+Collecting vtk==9.1.0 (from -r requirements.txt (line 1))
+  Downloading vtk-9.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (88.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.3/88.3 MB 31.6 MB/s eta 0:00:00
+Collecting pyvista==0.33.1 (from -r requirements.txt (line 2))
+  Downloading pyvista-0.33.1-py3-none-any.whl (1.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 91.6 MB/s eta 0:00:00
+Collecting pandas (from -r requirements.txt (line 3))
+  Obtaining dependency information for pandas from https://files.pythonhosted.org/packages/9e/0d/91a9fd2c202f2b1d97a38ab591890f86480ecbb596cbc56d035f6f23fdcc/pandas-2.0.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading pandas-2.0.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Collecting dash (from -r requirements.txt (line 4))
+  Obtaining dependency information for dash from https://files.pythonhosted.org/packages/4b/cc/bc4267ab13fe1b25bc1068894922ed064684879b77501004ad92aac34cdd/dash-2.12.1-py3-none-any.whl.metadata
+  Downloading dash-2.12.1-py3-none-any.whl.metadata (11 kB)
+Collecting ansys-mapdl-core (from -r requirements.txt (line 5))
+  Obtaining dependency information for ansys-mapdl-core from https://files.pythonhosted.org/packages/5c/12/79575b713ba33bc01f3f67fbfa28dcbfb18ff6774417a5aea8a2ce840669/ansys_mapdl_core-0.65.2-py3-none-any.whl.metadata
+  Downloading ansys_mapdl_core-0.65.2-py3-none-any.whl.metadata (14 kB)
+Collecting dash-bootstrap-components (from -r requirements.txt (line 6))
+  Obtaining dependency information for dash-bootstrap-components from https://files.pythonhosted.org/packages/fc/c9/ad461b6cc3adc570507fa77aafd090aafa95ebb9ce0265e5515e83e566d1/dash_bootstrap_components-1.4.2-py3-none-any.whl.metadata
+  Downloading dash_bootstrap_components-1.4.2-py3-none-any.whl.metadata (5.2 kB)
+Collecting dash-vtk (from -r requirements.txt (line 7))
+  Downloading dash_vtk-0.0.9-py3-none-any.whl (421 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 421.3/421.3 kB 53.4 MB/s eta 0:00:00
+Collecting diskcache (from -r requirements.txt (line 8))
+  Downloading diskcache-5.6.1-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 8.3 MB/s eta 0:00:00
+Collecting multiprocess (from -r requirements.txt (line 9))
+  Obtaining dependency information for multiprocess from https://files.pythonhosted.org/packages/c6/c9/820b5ab056f4ada76fbe05bd481a948f287957d6cbfd59e2dd2618b408c1/multiprocess-0.70.15-py39-none-any.whl.metadata
+  Downloading multiprocess-0.70.15-py39-none-any.whl.metadata (7.2 kB)
+Collecting requests (from -r requirements.txt (line 10))
+  Obtaining dependency information for requests from https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl.metadata
+  Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting flask-restful (from -r requirements.txt (line 11))
+  Obtaining dependency information for flask-restful from https://files.pythonhosted.org/packages/d7/7b/f0b45f0df7d2978e5ae51804bb5939b7897b2ace24306009da0cc34d8d1f/Flask_RESTful-0.3.10-py2.py3-none-any.whl.metadata
+  Downloading Flask_RESTful-0.3.10-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting gunicorn (from -r requirements.txt (line 12))
+  Obtaining dependency information for gunicorn from https://files.pythonhosted.org/packages/0e/2a/c3a878eccb100ccddf45c50b6b8db8cf3301a6adede6e31d48e8531cab13/gunicorn-21.2.0-py3-none-any.whl.metadata
+  Downloading gunicorn-21.2.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting wslink>=1.0.4 (from vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for wslink>=1.0.4 from https://files.pythonhosted.org/packages/47/60/1f477e68ff69446665cacbaf6ec22b316c301c516d3a9b18a7aceb5ce57f/wslink-1.11.1-py3-none-any.whl.metadata
+  Downloading wslink-1.11.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting matplotlib>=2.0.0 (from vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for matplotlib>=2.0.0 from https://files.pythonhosted.org/packages/47/b9/6c0daa9b953a80b4e6933bf6a11a2d0633f257e84ee5995c5fd35de564c9/matplotlib-3.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading matplotlib-3.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Collecting numpy (from pyvista==0.33.1->-r requirements.txt (line 2))
+  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/69/1f/c95b1108a9972a52d7b1b63ed8ca70466b59b8c1811bd121f1e667cc45d8/numpy-1.25.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading numpy-1.25.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Collecting imageio (from pyvista==0.33.1->-r requirements.txt (line 2))
+  Obtaining dependency information for imageio from https://files.pythonhosted.org/packages/7b/88/59411e1a652ac3338d348901ffa5a73daf1f67fcb3f97d750237d4fa0821/imageio-2.31.2-py3-none-any.whl.metadata
+  Downloading imageio-2.31.2-py3-none-any.whl.metadata (4.7 kB)
+Collecting pillow (from pyvista==0.33.1->-r requirements.txt (line 2))
+  Obtaining dependency information for pillow from https://files.pythonhosted.org/packages/eb/3a/023761d323f51b932ba8aa70bfe9c987f5fa094ffbaba9cd9295b8eee429/Pillow-10.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading Pillow-10.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting appdirs (from pyvista==0.33.1->-r requirements.txt (line 2))
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting scooby>=0.5.1 (from pyvista==0.33.1->-r requirements.txt (line 2))
+  Downloading scooby-0.7.2-py3-none-any.whl (16 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 3))
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pytz>=2020.1 (from pandas->-r requirements.txt (line 3))
+  Using cached pytz-2023.3-py2.py3-none-any.whl (502 kB)
+Collecting tzdata>=2022.1 (from pandas->-r requirements.txt (line 3))
+  Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 kB 58.8 MB/s eta 0:00:00
+Collecting Flask<2.3.0,>=1.0.4 (from dash->-r requirements.txt (line 4))
+  Downloading Flask-2.2.5-py3-none-any.whl (101 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.8/101.8 kB 24.1 MB/s eta 0:00:00
+Collecting Werkzeug<2.3.0 (from dash->-r requirements.txt (line 4))
+  Downloading Werkzeug-2.2.3-py3-none-any.whl (233 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.6/233.6 kB 41.0 MB/s eta 0:00:00
+Collecting plotly>=5.0.0 (from dash->-r requirements.txt (line 4))
+  Obtaining dependency information for plotly>=5.0.0 from https://files.pythonhosted.org/packages/26/5d/1e13b597ed8e54803e9ac6ded18c04cd35d8cbc49016778ec50c4ca9e9d5/plotly-5.16.1-py2.py3-none-any.whl.metadata
+  Downloading plotly-5.16.1-py2.py3-none-any.whl.metadata (7.0 kB)
+Collecting dash-html-components==2.0.0 (from dash->-r requirements.txt (line 4))
+  Downloading dash_html_components-2.0.0-py3-none-any.whl (4.1 kB)
+Collecting dash-core-components==2.0.0 (from dash->-r requirements.txt (line 4))
+  Downloading dash_core_components-2.0.0-py3-none-any.whl (3.8 kB)
+Collecting dash-table==5.0.0 (from dash->-r requirements.txt (line 4))
+  Downloading dash_table-5.0.0-py3-none-any.whl (3.9 kB)
+Collecting typing-extensions>=4.1.1 (from dash->-r requirements.txt (line 4))
+  Obtaining dependency information for typing-extensions>=4.1.1 from https://files.pythonhosted.org/packages/ec/6b/63cc3df74987c36fe26157ee12e09e8f9db4de771e0f3404263117e75b95/typing_extensions-4.7.1-py3-none-any.whl.metadata
+  Downloading typing_extensions-4.7.1-py3-none-any.whl.metadata (3.1 kB)
+Collecting retrying (from dash->-r requirements.txt (line 4))
+  Downloading retrying-1.3.4-py3-none-any.whl (11 kB)
+Collecting ansi2html (from dash->-r requirements.txt (line 4))
+  Downloading ansi2html-1.8.0-py3-none-any.whl (16 kB)
+Collecting nest-asyncio (from dash->-r requirements.txt (line 4))
+  Obtaining dependency information for nest-asyncio from https://files.pythonhosted.org/packages/7e/dd/69a7a6e89bb1fe09f99bde22027154c487b1e8b6769e642d7f56f35696d3/nest_asyncio-1.5.7-py3-none-any.whl.metadata
+  Downloading nest_asyncio-1.5.7-py3-none-any.whl.metadata (2.7 kB)
+Requirement already satisfied: setuptools in ./miniconda/envs/RESCALE/lib/python3.9/site-packages (from dash->-r requirements.txt (line 4)) (68.0.0)
+Collecting ansys-api-mapdl==0.5.1 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Downloading ansys_api_mapdl-0.5.1-py3-none-any.whl (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.2/52.2 kB 12.9 MB/s eta 0:00:00
+Collecting ansys-mapdl-reader>=0.51.7 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for ansys-mapdl-reader>=0.51.7 from https://files.pythonhosted.org/packages/a4/68/08b9e5cc832970aab5cfde4f3804c9404d6b82d65df09975ff3822bfc814/ansys_mapdl_reader-0.52.20-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading ansys_mapdl_reader-0.52.20-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting ansys-platform-instancemanagement~=1.0 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for ansys-platform-instancemanagement~=1.0 from https://files.pythonhosted.org/packages/14/1f/a05b62b999ca895ea66e7dbc6242e8121ea578d71fff1055b6cea7e45a51/ansys_platform_instancemanagement-1.1.2-py3-none-any.whl.metadata
+  Downloading ansys_platform_instancemanagement-1.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting click>=8.1.3 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for click>=8.1.3 from https://files.pythonhosted.org/packages/00/2e/d53fa4befbf2cfa713304affc7ca780ce4fc1fd8710527771b58311a3229/click-8.1.7-py3-none-any.whl.metadata
+  Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting grpcio>=1.30.0 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for grpcio>=1.30.0 from https://files.pythonhosted.org/packages/69/67/46ce6471c94af40118d728caa7e840fd55c70878dcfdad9837003e5863b6/grpcio-1.57.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading grpcio-1.57.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Collecting importlib-metadata>=4.0 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for importlib-metadata>=4.0 from https://files.pythonhosted.org/packages/cc/37/db7ba97e676af155f5fcb1a35466f446eadc9104e25b83366e8088c9c926/importlib_metadata-6.8.0-py3-none-any.whl.metadata
+  Downloading importlib_metadata-6.8.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting pexpect>=4.8.0 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Using cached pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting protobuf>=3.12.2 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for protobuf>=3.12.2 from https://files.pythonhosted.org/packages/f3/d8/fb02c40aa129c385430d177e4d9fa0160cb89be29305c8760861e538a2e4/protobuf-4.24.2-cp37-abi3-manylinux2014_x86_64.whl.metadata
+  Downloading protobuf-4.24.2-cp37-abi3-manylinux2014_x86_64.whl.metadata (540 bytes)
+Collecting psutil>=5.9.4 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Downloading psutil-5.9.5-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (282 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 282.1/282.1 kB 48.4 MB/s eta 0:00:00
+Collecting pyansys-tools-versioning>=0.3.3 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for pyansys-tools-versioning>=0.3.3 from https://files.pythonhosted.org/packages/5e/3c/ee52d4839e5ee37641dc34e29a0d7f212044320c5655b37896427a18be91/pyansys_tools_versioning-0.4.0-py3-none-any.whl.metadata
+  Downloading pyansys_tools_versioning-0.4.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting ansys-tools-path>=0.2.4 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for ansys-tools-path>=0.2.4 from https://files.pythonhosted.org/packages/a0/dc/aac69697372450fa09db1aace4f79121cb731f293329b33e0dc5ebd96f7a/ansys_tools_path-0.3.1-py3-none-any.whl.metadata
+  Downloading ansys_tools_path-0.3.1-py3-none-any.whl.metadata (6.1 kB)
+Collecting pyiges[full]>=0.3.1 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for pyiges[full]>=0.3.1 from https://files.pythonhosted.org/packages/42/42/aa4af4b5c38d09adfc0cbbd076dcff710b10558f8675b9257b5932c2583e/pyiges-0.3.1-py3-none-any.whl.metadata
+  Downloading pyiges-0.3.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting scipy>=1.3.0 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for scipy>=1.3.0 from https://files.pythonhosted.org/packages/a3/d3/f88285098505c8e5d141678a24bb9620d902c683f11edc1eb9532b02624e/scipy-1.11.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading scipy-1.11.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (59 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.1/59.1 kB 11.0 MB/s eta 0:00:00
+Collecting tqdm>=4.45.0 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for tqdm>=4.45.0 from https://files.pythonhosted.org/packages/00/e5/f12a80907d0884e6dff9c16d0c0114d81b8cd07dc3ae54c5e962cc83037e/tqdm-4.66.1-py3-none-any.whl.metadata
+  Downloading tqdm-4.66.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 12.6 MB/s eta 0:00:00
+Collecting protobuf>=3.12.2 (from ansys-mapdl-core->-r requirements.txt (line 5))
+  Downloading protobuf-3.20.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 99.4 MB/s eta 0:00:00
+Collecting dill>=0.3.7 (from multiprocess->-r requirements.txt (line 9))
+  Obtaining dependency information for dill>=0.3.7 from https://files.pythonhosted.org/packages/f5/3a/74a29b11cf2cdfcd6ba89c0cecd70b37cd1ba7b77978ce611eb7a146a832/dill-0.3.7-py3-none-any.whl.metadata
+  Downloading dill-0.3.7-py3-none-any.whl.metadata (9.9 kB)
+Collecting charset-normalizer<4,>=2 (from requests->-r requirements.txt (line 10))
+  Obtaining dependency information for charset-normalizer<4,>=2 from https://files.pythonhosted.org/packages/f9/0d/514be8597d7a96243e5467a37d337b9399cec117a513fcf9328405d911c0/charset_normalizer-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading charset_normalizer-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (31 kB)
+Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 10))
+  Using cached idna-3.4-py3-none-any.whl (61 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->-r requirements.txt (line 10))
+  Obtaining dependency information for urllib3<3,>=1.21.1 from https://files.pythonhosted.org/packages/9b/81/62fd61001fa4b9d0df6e31d47ff49cfa9de4af03adecf339c7bc30656b37/urllib3-2.0.4-py3-none-any.whl.metadata
+  Downloading urllib3-2.0.4-py3-none-any.whl.metadata (6.6 kB)
+Collecting certifi>=2017.4.17 (from requests->-r requirements.txt (line 10))
+  Obtaining dependency information for certifi>=2017.4.17 from https://files.pythonhosted.org/packages/4c/dd/2234eab22353ffc7d94e8d13177aaa050113286e93e7b40eae01fbf7c3d9/certifi-2023.7.22-py3-none-any.whl.metadata
+  Downloading certifi-2023.7.22-py3-none-any.whl.metadata (2.2 kB)
+Collecting aniso8601>=0.82 (from flask-restful->-r requirements.txt (line 11))
+  Downloading aniso8601-9.0.1-py2.py3-none-any.whl (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 12.5 MB/s eta 0:00:00
+Collecting six>=1.3.0 (from flask-restful->-r requirements.txt (line 11))
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting packaging (from gunicorn->-r requirements.txt (line 12))
+  Downloading packaging-23.1-py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB 9.5 MB/s eta 0:00:00
+Collecting ansys-api-platform-instancemanagement~=1.0 (from ansys-platform-instancemanagement~=1.0->ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for ansys-api-platform-instancemanagement~=1.0 from https://files.pythonhosted.org/packages/7b/ee/29aa78f8a0941e12251a32e6e2b397ff8c77b18389517591697403fae583/ansys_api_platform_instancemanagement-1.0.0-py3-none-any.whl.metadata
+  Downloading ansys_api_platform_instancemanagement-1.0.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting platformdirs>=3.6.0 (from ansys-tools-path>=0.2.4->ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for platformdirs>=3.6.0 from https://files.pythonhosted.org/packages/14/51/fe5a0d6ea589f0d4a1b97824fb518962ad48b27cd346dcdfa2405187997a/platformdirs-3.10.0-py3-none-any.whl.metadata
+  Downloading platformdirs-3.10.0-py3-none-any.whl.metadata (11 kB)
+Collecting Jinja2>=3.0 (from Flask<2.3.0,>=1.0.4->dash->-r requirements.txt (line 4))
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 27.9 MB/s eta 0:00:00
+Collecting itsdangerous>=2.0 (from Flask<2.3.0,>=1.0.4->dash->-r requirements.txt (line 4))
+  Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting zipp>=0.5 (from importlib-metadata>=4.0->ansys-mapdl-core->-r requirements.txt (line 5))
+  Obtaining dependency information for zipp>=0.5 from https://files.pythonhosted.org/packages/8c/08/d3006317aefe25ea79d3b76c9650afabaf6d63d1c8443b236e7405447503/zipp-3.16.2-py3-none-any.whl.metadata
+  Downloading zipp-3.16.2-py3-none-any.whl.metadata (3.7 kB)
+Collecting contourpy>=1.0.1 (from matplotlib>=2.0.0->vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for contourpy>=1.0.1 from https://files.pythonhosted.org/packages/38/6f/5382bdff9dda60cb17cef6dfa2bad3e6edacffd5c2243e282e851c63f721/contourpy-1.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading contourpy-1.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.7 kB)
+Collecting cycler>=0.10 (from matplotlib>=2.0.0->vtk==9.1.0->-r requirements.txt (line 1))
+  Using cached cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting fonttools>=4.22.0 (from matplotlib>=2.0.0->vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for fonttools>=4.22.0 from https://files.pythonhosted.org/packages/49/50/2e31753c088d364756daa5bed0dab6a5928ebfd6e6d26f975c8b6d6f754a/fonttools-4.42.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading fonttools-4.42.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (150 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.0/151.0 kB 30.0 MB/s eta 0:00:00
+Collecting kiwisolver>=1.0.1 (from matplotlib>=2.0.0->vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for kiwisolver>=1.0.1 from https://files.pythonhosted.org/packages/c0/a8/841594f11d0b88d8aeb26991bc4dac38baa909dc58d0c4262a4f7893bcbf/kiwisolver-1.4.5-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata
+  Downloading kiwisolver-1.4.5-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (6.4 kB)
+Collecting pyparsing<3.1,>=2.3.1 (from matplotlib>=2.0.0->vtk==9.1.0->-r requirements.txt (line 1))
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 kB 19.8 MB/s eta 0:00:00
+Collecting importlib-resources>=3.2.0 (from matplotlib>=2.0.0->vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for importlib-resources>=3.2.0 from https://files.pythonhosted.org/packages/25/d4/592f53ce2f8dde8be5720851bd0ab71cc2e76c55978e4163ef1ab7e389bb/importlib_resources-6.0.1-py3-none-any.whl.metadata
+  Downloading importlib_resources-6.0.1-py3-none-any.whl.metadata (4.0 kB)
+Collecting ptyprocess>=0.5 (from pexpect>=4.8.0->ansys-mapdl-core->-r requirements.txt (line 5))
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting tenacity>=6.2.0 (from plotly>=5.0.0->dash->-r requirements.txt (line 4))
+  Obtaining dependency information for tenacity>=6.2.0 from https://files.pythonhosted.org/packages/f4/f1/990741d5bb2487d529d20a433210ffa136a367751e454214013b441c4575/tenacity-8.2.3-py3-none-any.whl.metadata
+  Downloading tenacity-8.2.3-py3-none-any.whl.metadata (1.0 kB)
+Collecting geomdl (from pyiges[full]>=0.3.1->ansys-mapdl-core->-r requirements.txt (line 5))
+  Downloading geomdl-5.3.1-py2.py3-none-any.whl (147 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 147.6/147.6 kB 26.7 MB/s eta 0:00:00
+Collecting MarkupSafe>=2.1.1 (from Werkzeug<2.3.0->dash->-r requirements.txt (line 4))
+  Obtaining dependency information for MarkupSafe>=2.1.1 from https://files.pythonhosted.org/packages/de/63/cb7e71984e9159ec5f45b5e81e896c8bdd0e45fe3fc6ce02ab497f0d790e/MarkupSafe-2.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading MarkupSafe-2.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+Collecting aiohttp<4 (from wslink>=1.0.4->vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for aiohttp<4 from https://files.pythonhosted.org/packages/5b/8d/821fcb268cfc056964a75da3823896b17eabaa4968a2414121bc93b0c501/aiohttp-3.8.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading aiohttp-3.8.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4->wslink>=1.0.4->vtk==9.1.0->-r requirements.txt (line 1))
+  Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 12.1 MB/s eta 0:00:00
+Collecting multidict<7.0,>=4.5 (from aiohttp<4->wslink>=1.0.4->vtk==9.1.0->-r requirements.txt (line 1))
+  Downloading multidict-6.0.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.2/114.2 kB 22.2 MB/s eta 0:00:00
+Collecting async-timeout<5.0,>=4.0.0a3 (from aiohttp<4->wslink>=1.0.4->vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for async-timeout<5.0,>=4.0.0a3 from https://files.pythonhosted.org/packages/a7/fa/e01228c2938de91d47b307831c62ab9e4001e747789d0b05baf779a6488c/async_timeout-4.0.3-py3-none-any.whl.metadata
+  Downloading async_timeout-4.0.3-py3-none-any.whl.metadata (4.2 kB)
+Collecting yarl<2.0,>=1.0 (from aiohttp<4->wslink>=1.0.4->vtk==9.1.0->-r requirements.txt (line 1))
+  Downloading yarl-1.9.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (269 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 269.4/269.4 kB 34.1 MB/s eta 0:00:00
+Collecting frozenlist>=1.1.1 (from aiohttp<4->wslink>=1.0.4->vtk==9.1.0->-r requirements.txt (line 1))
+  Obtaining dependency information for frozenlist>=1.1.1 from https://files.pythonhosted.org/packages/b5/03/7dec2e257bd173b5ca1f74477863b97d322149f6f0284d7decead8c5ceeb/frozenlist-1.4.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading frozenlist-1.4.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.2 kB)
+Collecting aiosignal>=1.1.2 (from aiohttp<4->wslink>=1.0.4->vtk==9.1.0->-r requirements.txt (line 1))
+  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Downloading pandas-2.0.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 103.9 MB/s eta 0:00:00
+Downloading dash-2.12.1-py3-none-any.whl (10.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 111.7 MB/s eta 0:00:00
+Downloading ansys_mapdl_core-0.65.2-py3-none-any.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 93.3 MB/s eta 0:00:00
+Downloading dash_bootstrap_components-1.4.2-py3-none-any.whl (220 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.6/220.6 kB 38.8 MB/s eta 0:00:00
+Downloading multiprocess-0.70.15-py39-none-any.whl (133 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.3/133.3 kB 29.8 MB/s eta 0:00:00
+Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 15.9 MB/s eta 0:00:00
+Downloading Flask_RESTful-0.3.10-py2.py3-none-any.whl (26 kB)
+Downloading gunicorn-21.2.0-py3-none-any.whl (80 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 21.2 MB/s eta 0:00:00
+Downloading ansys_mapdl_reader-0.52.20-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 97.3 MB/s eta 0:00:00
+Downloading ansys_platform_instancemanagement-1.1.2-py3-none-any.whl (18 kB)
+Downloading ansys_tools_path-0.3.1-py3-none-any.whl (12 kB)
+Using cached certifi-2023.7.22-py3-none-any.whl (158 kB)
+Downloading charset_normalizer-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (202 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 39.2 MB/s eta 0:00:00
+Downloading click-8.1.7-py3-none-any.whl (97 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 25.0 MB/s eta 0:00:00
+Downloading dill-0.3.7-py3-none-any.whl (115 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.3/115.3 kB 22.8 MB/s eta 0:00:00
+Downloading grpcio-1.57.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 110.1 MB/s eta 0:00:00
+Downloading importlib_metadata-6.8.0-py3-none-any.whl (22 kB)
+Downloading matplotlib-3.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 113.9 MB/s eta 0:00:00
+Downloading numpy-1.25.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 89.8 MB/s eta 0:00:00
+Downloading Pillow-10.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 33.8 MB/s eta 0:00:00
+Downloading plotly-5.16.1-py2.py3-none-any.whl (15.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.6/15.6 MB 93.4 MB/s eta 0:00:00
+Downloading pyansys_tools_versioning-0.4.0-py3-none-any.whl (9.2 kB)
+Downloading scipy-1.11.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.5/36.5 MB 56.9 MB/s eta 0:00:00
+Downloading tqdm-4.66.1-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 19.5 MB/s eta 0:00:00
+Downloading typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Downloading urllib3-2.0.4-py3-none-any.whl (123 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.9/123.9 kB 29.3 MB/s eta 0:00:00
+Downloading wslink-1.11.1-py3-none-any.whl (32 kB)
+Downloading imageio-2.31.2-py3-none-any.whl (313 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 313.2/313.2 kB 55.4 MB/s eta 0:00:00
+Using cached nest_asyncio-1.5.7-py3-none-any.whl (5.3 kB)
+Downloading aiohttp-3.8.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 92.4 MB/s eta 0:00:00
+Downloading ansys_api_platform_instancemanagement-1.0.0-py3-none-any.whl (14 kB)
+Downloading contourpy-1.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (300 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 300.4/300.4 kB 47.7 MB/s eta 0:00:00
+Downloading fonttools-4.42.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 116.7 MB/s eta 0:00:00
+Downloading importlib_resources-6.0.1-py3-none-any.whl (34 kB)
+Downloading kiwisolver-1.4.5-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 112.5 MB/s eta 0:00:00
+Downloading MarkupSafe-2.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Downloading platformdirs-3.10.0-py3-none-any.whl (17 kB)
+Downloading tenacity-8.2.3-py3-none-any.whl (24 kB)
+Downloading zipp-3.16.2-py3-none-any.whl (7.2 kB)
+Downloading pyiges-0.3.1-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 91.4 MB/s eta 0:00:00
+Downloading async_timeout-4.0.3-py3-none-any.whl (5.7 kB)
+Downloading frozenlist-1.4.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (228 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.0/228.0 kB 45.8 MB/s eta 0:00:00
+Installing collected packages: pytz, ptyprocess, geomdl, dash-table, dash-html-components, dash-core-components, appdirs, aniso8601, zipp, urllib3, tzdata, typing-extensions, tqdm, tenacity, six, scooby, pyparsing, psutil, protobuf, platformdirs, pillow, pexpect, packaging, numpy, nest-asyncio, multidict, MarkupSafe, kiwisolver, itsdangerous, idna, grpcio, frozenlist, fonttools, diskcache, dill, cycler, click, charset-normalizer, certifi, attrs, async-timeout, ansi2html, yarl, Werkzeug, scipy, retrying, requests, python-dateutil, pyiges, plotly, multiprocess, Jinja2, importlib-resources, importlib-metadata, imageio, gunicorn, contourpy, ansys-tools-path, ansys-api-platform-instancemanagement, ansys-api-mapdl, aiosignal, pyansys-tools-versioning, pandas, matplotlib, Flask, ansys-platform-instancemanagement, aiohttp, wslink, flask-restful, dash, vtk, dash-bootstrap-components, pyvista, dash-vtk, ansys-mapdl-reader, ansys-mapdl-core
+Successfully installed Flask-2.2.5 Jinja2-3.1.2 MarkupSafe-2.1.3 Werkzeug-2.2.3 aiohttp-3.8.5 aiosignal-1.3.1 aniso8601-9.0.1 ansi2html-1.8.0 ansys-api-mapdl-0.5.1 ansys-api-platform-instancemanagement-1.0.0 ansys-mapdl-core-0.65.2 ansys-mapdl-reader-0.52.20 ansys-platform-instancemanagement-1.1.2 ansys-tools-path-0.3.1 appdirs-1.4.4 async-timeout-4.0.3 attrs-23.1.0 certifi-2023.7.22 charset-normalizer-3.2.0 click-8.1.7 contourpy-1.1.0 cycler-0.11.0 dash-2.12.1 dash-bootstrap-components-1.4.2 dash-core-components-2.0.0 dash-html-components-2.0.0 dash-table-5.0.0 dash-vtk-0.0.9 dill-0.3.7 diskcache-5.6.1 flask-restful-0.3.10 fonttools-4.42.1 frozenlist-1.4.0 geomdl-5.3.1 grpcio-1.57.0 gunicorn-21.2.0 idna-3.4 imageio-2.31.2 importlib-metadata-6.8.0 importlib-resources-6.0.1 itsdangerous-2.1.2 kiwisolver-1.4.5 matplotlib-3.7.2 multidict-6.0.4 multiprocess-0.70.15 nest-asyncio-1.5.7 numpy-1.25.2 packaging-23.1 pandas-2.0.3 pexpect-4.8.0 pillow-10.0.0 platformdirs-3.10.0 plotly-5.16.1 protobuf-3.20.3 psutil-5.9.5 ptyprocess-0.7.0 pyansys-tools-versioning-0.4.0 pyiges-0.3.1 pyparsing-3.0.9 python-dateutil-2.8.2 pytz-2023.3 pyvista-0.33.1 requests-2.31.0 retrying-1.3.4 scipy-1.11.2 scooby-0.7.2 six-1.16.0 tenacity-8.2.3 tqdm-4.66.1 typing-extensions-4.7.1 tzdata-2023.3 urllib3-2.0.4 vtk-9.1.0 wslink-1.11.1 yarl-1.9.2 zipp-3.16.2
+2023-08-28 17:13:47,089 - Authenticated as bdobrzelecki@rescale.com
+2023-08-28 17:13:49,477 - using sandbox RtEjFc
+Please enter the package name:
+2023-08-28 17:13:50,984 - Sandbox RtEjFc: created package WMuia
+2023-08-28 17:13:51,259 - Sandbox RtEjFc: Waiting for status PACKAGE_COMPLETE
+2023-08-28 17:14:51,837 - Sandbox RtEjFc: Status - SNAPSHOT_IN_PROGRESS
+2023-08-28 17:15:52,448 - Sandbox RtEjFc: Status - SNAPSHOT_IN_PROGRESS
+2023-08-28 17:16:52,943 - Sandbox RtEjFc: Status - SNAPSHOT_IN_PROGRESS
+2023-08-28 17:17:54,736 - Sandbox RtEjFc: Status - SNAPSHOT_IN_PROGRESS
+2023-08-28 17:18:55,247 - Sandbox RtEjFc: Status - SNAPSHOT_IN_PROGRESS
+2023-08-28 17:19:55,944 - Sandbox RtEjFc: Status - SNAPSHOT_IN_PROGRESS
+2023-08-28 17:20:56,789 - Sandbox RtEjFc: Status - SNAPSHOT_CREATED
+2023-08-28 17:21:58,046 - Sandbox RtEjFc: Status - SNAPSHOT_CREATED
+2023-08-28 17:22:58,912 - Sandbox RtEjFc: Status - SNAPSHOT_CREATED
+2023-08-28 17:23:59,785 - Sandbox RtEjFc: Status - SNAPSHOT_CREATED
+2023-08-28 17:25:00,643 - Sandbox RtEjFc: Status - SNAPSHOT_CREATED
+2023-08-28 17:26:01,554 - Sandbox RtEjFc: Status - TERMINATING_SANDBOX
+2023-08-28 17:26:21,453 - Sandbox RtEjFc: Published software version GmoNk | id: GmoNk
+2023-08-28 17:26:22,079 - Sandbox RtEjFc: Waiting for status SANDBOX_TERMINATED
+2023-08-28 17:27:22,941 - Sandbox RtEjFc: Status - SANDBOX_TERMINATED
+2023-08-28 17:27:22,942 - Publishing complete.
