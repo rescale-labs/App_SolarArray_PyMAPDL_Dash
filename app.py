@@ -1,4 +1,7 @@
+import logging
 import os
+import sys
+from pathlib import Path
 
 import dash
 import dash_bootstrap_components as dbc
@@ -15,9 +18,40 @@ from dash.long_callback import DiskcacheLongCallbackManager
 from dash_vtk.utils import to_mesh_state
 from flask_restful import Api, Resource
 
-APP_ID = "solar_array"
+APP_ID = "rescale_solarrydsgn"
+LOCAL_CLUSTER_ID = "local"
+CLUSTER_ID = os.getenv("RESCALE_CLUSTER_ID", LOCAL_CLUSTER_ID)
+PREFIX = f"/notebooks/{CLUSTER_ID}/"
 
-PREFIX = f"/notebooks/{os.getenv('RESCALE_CLUSTER_ID')}/"
+logger = logging.getLogger(__name__)
+if CLUSTER_ID != LOCAL_CLUSTER_ID:
+    logging.basicConfig(
+        filename=os.path.join(Path.home(), "work", f"{APP_ID}.log"),
+        filemode="w",
+        level=logging.ERROR,
+    )
+else:
+    logging.basicConfig(filename=f"{APP_ID}.log", filemode="w", level=logging.DEBUG)
+
+
+def handle_unhandled_exception(exc_type, exc_value, exc_traceback):
+    if issubclass(exc_type, KeyboardInterrupt):
+        sys.__excepthook__(exc_type, exc_value, exc_traceback)
+        return
+    logger.critical(
+        "Unhandled exception", exc_info=(exc_type, exc_value, exc_traceback)
+    )
+
+
+sys.excepthook = handle_unhandled_exception
+
+
+# Check ANSYS Mechanical relevant environmental variables
+logger.debug(f"PYMAPDL_MAPDL_EXEC\t->\t{os.getenv('PYMAPDL_MAPDL_EXEC')}")
+logger.debug("Iterating ANSYS related envvars.")
+for name, value in os.environ.items():
+    if name.startswith("ANSYS"):
+        logger.debug(f"{name}\t->\t{value}")
 
 
 def make_colorbar(title, rng, bgnd="rgb(51, 76, 102)"):
