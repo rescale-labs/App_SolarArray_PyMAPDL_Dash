@@ -1,0 +1,12 @@
+vtk==9.1.0
+pyvista==0.33.1
+ansys-mapdl-core==0.64.1
+pandas
+dash
+dash-bootstrap-components
+dash-vtk
+diskcache
+multiprocess
+requests
+flask-restful
+gunicorn

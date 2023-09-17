@@ -38,7 +38,7 @@ A Rescale App can be published as a separate software tile visible in the Rescal
 
 Make sure Software Publisher is enabled for your organization, the `jupyter4all` flag is active (ask your Rescale contact) and the Rescale CLI is installed and configured.
 
-Edit the [`sbub/build.sh`](spub/build.sh) and change the `ANALYSIS_CODE` to something unique, preferably using your organization's domain name (assuming `www.example.com`, use `com_example_app_solar_array_designer`). When ready, source the build script (see [`spub/spub_sample_output.out`](spub/spub_sample_output.out) for sample output of a successful publication):
+Edit the [`sbub/build.sh`](spub/build.sh) and change the `ANALYSIS_CODE` to something unique, preferably using your organization's domain name (assuming `www.example.com`, use `com_example_solarrydsgnr`). When ready, source the build script (see [`spub/spub_sample_output.out`](spub/spub_sample_output.out) for sample output of a successful publication):
 
 ```
 ❯ cd App_SolarArray_PyMAPDL_Dash/spub

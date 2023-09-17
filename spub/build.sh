@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ANALYSIS_CODE="com_rescale_app_solar_array_designer"
-MOUNT_POINT="/program/$ANALYSIS_CODE"
-VERSION="2023.08.28-dev"
+ANALYSIS_CODE="rescale_solarrydsgn"
+VERSION="2023.09.17-dev"
+MOUNT_POINT="/program/${ANALYSIS_CODE}_${VERSION}"
 
 # Using templates makes it easier to publish new versions without touching multiple files.
 instantiate_template() {
